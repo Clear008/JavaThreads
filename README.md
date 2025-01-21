@@ -29,9 +29,9 @@ This exercise demonstrates parallel computation using a thread pool. The program
 ---
 
 
-#Activité pratique : Les threads
+# Activité pratique : Les threads
 
-##Exercice 1 :
+## Exercice 1 :
 On souhaite créer une simple application pour mettant en évidence un comportement classique
 en programmation multi-threads.
 1. Écrivez une classe Talkative qui contient un constructeur prenant en paramètre un entier
@@ -46,22 +46,18 @@ unique ;
 5. Appelez la méthode start sur chacun des objets de type Thread qui ont été créé.
 6. Que constatez-vous ?
 
-##Exercice 2 :
+## Exercice 2 :
 
 On souhaite créer un programme Java qui utilise un pool de threads pour calculer la somme
 des éléments d'un tableau de manière parallèle. Pour cela vous avez les renseignements
 suivants :
-• Créez une classe Sommeur qui implémente l'interface Runnable.
-• Le constructeur de la classe Sommeur prendra comme argument un tableau d'entiers
+- Créez une classe Sommeur qui implémente l'interface Runnable.
+- Le constructeur de la classe Sommeur prendra comme argument un tableau d'entiers
 et deux indices debut et fin pour définir la plage d'indices sur laquelle la somme
 doit être calculée.
-• La classe Sommeur doit avoir une méthode getSomme() qui renvoie la somme
+- La classe Sommeur doit avoir une méthode getSomme() qui renvoie la somme
 calculée dans la plage spécifiée.
-• Dans la classe principale (Main), créez un tableau d'entiers.
-
-Programmation Orientée Objet Java 2023
-
-Mr. Abdelmajid BOUSSELHAM 2
-• Divisez le tableau en plusieurs plages et créez un pool de threads pour calculer la
+- Dans la classe principale (Main), créez un tableau d'entiers.
+   - Divisez le tableau en plusieurs plages et créez un pool de threads pour calculer la
 somme de chaque plage de manière concurrente.
-• Attendez que tous les threads aient terminé et affichez la somme totale du tableau.
+  - Attendez que tous les threads aient terminé et affichez la somme totale du tableau.
